@@ -35,8 +35,8 @@ add_action( 'save_post', function( $post_id ){
 });
 ```
 
-======
-Kris Gale
+------
+## Kris Gale
 
 [krisgale commented on Aug 8](https://github.com/WordPress/gutenberg/issues/7176#issuecomment-411482402)
 
