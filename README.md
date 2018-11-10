@@ -1,12 +1,12 @@
 # Gutenberg MetaBox Diagnostic
 
 Exploration of how to save metabox info with Gutenberg active. Seems that most issues have been covered excepty WYSIWG editor.
-
+------
 The Issue
 ======
 
 [gutenberg/issues/7176](https://github.com/WordPress/gutenberg/issues/7176)
-
+------
 Daniel Bachhuber
 ------
 
@@ -34,6 +34,8 @@ add_action( 'save_post', function( $post_id ){
 	update_post_meta( $post_id, 'test_tinymce', $_POST['test_tinymce'] );
 });
 ```
+
+======
 
 Kris Gale
 ------
