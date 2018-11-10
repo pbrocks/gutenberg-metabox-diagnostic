@@ -1,14 +1,11 @@
 # Gutenberg MetaBox Diagnostic
 
 Exploration of how to save metabox info with Gutenberg active. Seems that most issues have been covered excepty WYSIWG editor.
-------
-The Issue
-======
 
+------
 [gutenberg/issues/7176](https://github.com/WordPress/gutenberg/issues/7176)
 ------
-Daniel Bachhuber
-------
+## Daniel Bachhuber
 
 [danielbachhuber commented on Aug 10](https://github.com/WordPress/gutenberg/issues/7176#issuecomment-412134455)
 
@@ -60,8 +57,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
 ```
 > where field_name is the id= and name= of the textarea being 'enhanced.'
 
-Davis Shaver
 ------
+## Davis Shaver
+
 [davisshaver commented on Apr 19](https://github.com/WordPress/gutenberg/pull/3840#issuecomment-382856965)
 
 > so we need to update TinyMCE field before we send the action. We can do this with:
@@ -72,8 +70,15 @@ if ( window.tinyMCE ) {
 ```
 I am looking for an appropriate spot to place this
 
-Riad Benguella
+
+https://github.com/WordPress/gutenberg/issues/5718
+
 ------
+[gutenberg/issues/5718](https://github.com/WordPress/gutenberg/issues/5718)
+------
+------
+## Riad Benguella
+
 [youknowriad commented on Mar 28](https://github.com/WordPress/gutenberg/issues/5718#issuecomment-376923025)
 
 > We made a decision about not refreshing the meta boxes on save, because this was creating way too many issues as it goes against Single Page Application aspect of Gutenberg.
