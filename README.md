@@ -8,7 +8,7 @@ Exploration of how to save metabox info with Gutenberg active. Seems that most i
 
 > I put together a code snippet:
 >
-> ```php
+```
 add_action( 'add_meta_boxes', function(){
 	add_meta_box( 'test_tinymce', 'Test TinyMCE', function( $post ){
 		 $field_value = get_post_meta( $post->ID, 'test_tinymce', true );
@@ -33,7 +33,8 @@ add_action( 'save_post', function( $post_id ){
 
 > workaround:
 > 
-```js
+
+```
 document.addEventListener( 'DOMContentLoaded', () => {
   wp.editor.initialize( 'field_name', {
     'textarea_name': 'field_name',
