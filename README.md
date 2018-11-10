@@ -61,6 +61,20 @@ if ( window.tinyMCE ) {
 ```
 I am looking for an appropriate spot to place this
 
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
 [youknowriad commented on Mar 28](https://github.com/WordPress/gutenberg/issues/5718#issuecomment-376923025)
 
 > We made a decision about not refreshing the meta boxes on save, because this was creating way too many issues as it goes against Single Page Application aspect of Gutenberg.
