@@ -2,7 +2,13 @@
 
 Exploration of how to save metabox info with Gutenberg active. Seems that most issues have been covered excepty WYSIWG editor.
 
+The Issue
+======
+
 [gutenberg/issues/7176](https://github.com/WordPress/gutenberg/issues/7176)
+
+Daniel Bachhuber
+------
 
 [danielbachhuber commented on Aug 10](https://github.com/WordPress/gutenberg/issues/7176#issuecomment-412134455)
 
@@ -29,6 +35,8 @@ add_action( 'save_post', function( $post_id ){
 });
 ```
 
+Kris Gale
+------
 [krisgale commented on Aug 8](https://github.com/WordPress/gutenberg/issues/7176#issuecomment-411482402)
 
 > workaround:
@@ -51,6 +59,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 ```
 > where field_name is the id= and name= of the textarea being 'enhanced.'
 
+Davis Shaver
+------
 [davisshaver commented on Apr 19](https://github.com/WordPress/gutenberg/pull/3840#issuecomment-382856965)
 
 > so we need to update TinyMCE field before we send the action. We can do this with:
@@ -61,19 +71,7 @@ if ( window.tinyMCE ) {
 ```
 I am looking for an appropriate spot to place this
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
+Riad Benguella
 ------
 [youknowriad commented on Mar 28](https://github.com/WordPress/gutenberg/issues/5718#issuecomment-376923025)
 
