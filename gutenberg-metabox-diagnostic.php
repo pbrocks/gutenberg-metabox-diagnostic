@@ -46,3 +46,17 @@ add_action(
 		update_post_meta( $post_id, 'test_tinymce', $_POST['test_tinymce'] );
 	}
 );
+
+add_action( 'wp', 'add_meta_box_to_head' );
+// function add_meta_box_to_head( $post_id ) {
+function add_meta_box_to_head() {
+	global $post;
+
+	$meta = get_post_meta( $post->ID, 'test_tinymce' );
+	echo '<h4 style="text-align:center;">Post ID = ' . $post->ID;
+	// echo '<pre>';
+	// print_r( $post->ID );
+	echo '<br>string = ' . $meta[0];
+	// echo '</pre>';
+	echo '</h4>';
+}
