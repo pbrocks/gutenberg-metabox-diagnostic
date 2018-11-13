@@ -1,6 +1,6 @@
 # Gutenberg MetaBox Diagnostic
 
-Exploration of how to save metabox info with Gutenberg active. Seems that most issues have been covered excepty WYSIWG editor.
+Collection of snippets on how to save WYSIWG metabox info with Gutenberg active.
 
 ------
 [gutenberg/issues/7176](https://github.com/WordPress/gutenberg/issues/7176)
