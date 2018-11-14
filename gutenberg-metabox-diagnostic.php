@@ -28,7 +28,7 @@ function gutenberg_test_tinymce() {
 					'media_buttons' => false,
 					'textarea_name' => 'test_tinymce',
 					'textarea_rows' => 10,
-					'teeny'         => true,
+					// 'teeny'         => true,
 				)
 			);
 		},
@@ -46,7 +46,7 @@ add_action(
 		update_post_meta( $post_id, 'test_tinymce', $_POST['test_tinymce'] );
 	}
 );
-
+// /Users/apple/Local Sites/aempty/app/public/wp-content/plugins/gutenberg-metabox-diagnostic/gutenberg-metabox-diagnostic.php
 add_action( 'wp', 'add_meta_box_to_head' );
 // function add_meta_box_to_head( $post_id ) {
 function add_meta_box_to_head() {
@@ -60,3 +60,12 @@ function add_meta_box_to_head() {
 	// echo '</pre>';
 	echo '</h4>';
 }
+// function load_custom_gutie_admin_script( $hook ) {
+function load_custom_gutie_admin_script() {
+		// Load only on ?page=mypluginname
+	// if ( $hook != 'toplevel_page_mypluginname' ) {
+			// return;
+	// }
+	wp_enqueue_script( 'custom-gutie', plugins_url( 'custom-gutie2.js', __FILE__ ), array( 'jquery' ), time(), true );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_gutie_admin_script' );
